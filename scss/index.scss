@@ -117,6 +117,7 @@ img {
   justify-content: center;
   align-items: center;
   padding: 1rem 2rem;
+  height: 58px;
   font-size: 15px;
   font-weight: $font-medium;
   color: $white-color;
@@ -232,5 +233,31 @@ img {
   // Show Menu
   .show-menu {
     right: 0;
+  }
+}
+
+// ===== HOME SECTION =====
+.home {
+  padding: 8rem 0;
+
+  &__container {
+    text-align: center;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    &-video {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      color: $black-color;
+    }
+
+    &-play {
+      font-size: 1.8rem;
+    }
   }
 }
