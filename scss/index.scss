@@ -94,7 +94,7 @@ img {
 }
 
 .section {
-  padding: 8rem 0;
+  padding: 8rem 0 4rem;
 
   &-title {
     font-size: 32px;
@@ -238,7 +238,7 @@ img {
 
 // ===== HOME SECTION =====
 .home {
-  padding: 8rem 0;
+  padding: 8rem 0 4rem;
 
   &__container {
     text-align: center;
@@ -259,5 +259,29 @@ img {
     &-play {
       font-size: 1.8rem;
     }
+  }
+}
+
+// ===== FEATURE SECTION =====
+.feature {
+  &__container {
+    gap: 6rem;
+  }
+
+  &__item {
+    padding: 4rem 0;
+    background-color: #fff6d9;
+
+    &-container {
+      gap: 3rem;
+    }
+
+    &-data {
+      text-align: center;
+    }
+  }
+
+  &__item:nth-child(even) {
+    background-color: #f4f2fa;
   }
 }
