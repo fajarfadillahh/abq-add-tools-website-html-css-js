@@ -613,7 +613,7 @@ img {
   font-size: 1.5rem;
   color: $white-color;
   transition: $transition-400;
-  z-index: $z-fixed;
+  z-index: $z-tooltip;
   opacity: 0;
 
   &:hover {
@@ -649,5 +649,42 @@ img {
   .feature__item-img {
     width: 400px;
     justify-self: center;
+  }
+}
+
+// ----- width 640px -----
+@media screen and (min-width: 640px) {
+  .section {
+    &-title {
+      font-size: 42px;
+    }
+
+    &-text {
+      font-size: 16px;
+    }
+  }
+
+  .button,
+  .header__link,
+  .testimonial__content-profession,
+  .plan__buttons,
+  .plan__item-text,
+  .plan__item-item,
+  .plan__item-prices,
+  .faq__accordion-text,
+  .footer__data-text,
+  .footer__item-link,
+  .footer__copy {
+    font-size: 16px;
+  }
+
+  .home__data,
+  .feature__item-data,
+  .testimonial__content-text {
+    width: 450px;
+  }
+
+  .faq__accordion-title {
+    font-size: 20px;
   }
 }
