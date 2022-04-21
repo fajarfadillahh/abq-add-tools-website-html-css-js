@@ -796,3 +796,53 @@ img {
     font-size: 20px;
   }
 }
+
+// ----- width 1120px -----
+@media screen and (min-width: 1120px) {
+  .header__list {
+    gap: 2rem;
+  }
+
+  .home__container,
+  .feature__item-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+
+  .home__data,
+  .feature__item-data {
+    width: auto;
+    text-align: left;
+  }
+
+  .home__title {
+    font-size: 72px;
+  }
+
+  .home__text {
+    width: 420px;
+  }
+
+  .home__img,
+  .feature__item-img {
+    width: auto;
+  }
+
+  .feature__item-title {
+    font-size: 62px;
+  }
+
+  .testimonial__content-text {
+    font-size: 24px;
+    width: 800px;
+  }
+
+  .plan__group {
+    grid-template-columns: repeat(3, max-content);
+  }
+
+  .footer__item {
+    justify-self: center;
+  }
+}
