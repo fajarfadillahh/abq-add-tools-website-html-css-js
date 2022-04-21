@@ -615,3 +615,26 @@ img {
     text-align: center;
   }
 }
+
+// ===== SCROLLUP SECTION =====
+.scrollup {
+  position: fixed;
+  bottom: 3rem;
+  right: 1.5rem;
+  display: inline-flex;
+  justify-content: center;
+  padding: 0.5rem;
+  background-color: rgba($color: #724fd8, $alpha: 0.7);
+  font-size: 1.5rem;
+  color: $white-color;
+  transition: $transition-400;
+  opacity: 0;
+
+  &:hover {
+    background-color: rgba($color: #724fd8, $alpha: 1);
+  }
+
+  &.scroll-action {
+    opacity: 1;
+  }
+}
