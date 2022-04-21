@@ -624,3 +624,30 @@ img {
     opacity: 1;
   }
 }
+
+// ===== MEDIA QUERIES =====
+// ----- width 480px -----
+@media screen and (min-width: 480px) {
+  .section-title {
+    font-size: 36px;
+  }
+
+  .home__data,
+  .feature__item-data,
+  .testimonial__content-text {
+    width: 400px;
+    justify-self: center;
+  }
+
+  .home__buttons,
+  .feature__item-button {
+    display: inline-flex;
+    justify-self: center;
+  }
+
+  .home__img,
+  .feature__item-img {
+    width: 400px;
+    justify-self: center;
+  }
+}
