@@ -143,6 +143,12 @@ img {
   left: 0;
   background-color: $white-color;
   z-index: $z-fixed;
+  transition: $transition-400;
+
+  // sticky header
+  &.sticky-header {
+    box-shadow: 2px 0 12px rgba($color: #000000, $alpha: 0.1);
+  }
 
   &__container {
     height: $header-height;
