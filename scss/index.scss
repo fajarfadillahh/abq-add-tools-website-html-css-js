@@ -551,12 +551,13 @@ img {
 // ===== FOOTER SECTION =====
 .footer {
   &__container {
-    gap: 4rem;
+    gap: 6rem;
   }
 
   &__group {
     display: grid;
-    gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
   }
 
   &__data {
@@ -565,28 +566,6 @@ img {
       color: $grey-color;
       line-height: $leading-text;
       margin-top: $margin-1;
-    }
-
-    &-direction {
-      display: flex;
-      gap: 10px;
-      padding: 0.3rem;
-      margin-top: 2rem;
-      border: 1.3px solid rgba($color: #000000, $alpha: 0.1);
-    }
-
-    &-input {
-      width: 200px;
-      padding: 1rem;
-      font-size: 15px;
-      font-weight: $font-medium;
-      color: $black-color;
-
-      &::placeholder {
-        font-size: 15px;
-        font-weight: $font-medium;
-        color: $grey-color;
-      }
     }
   }
 
@@ -601,7 +580,7 @@ img {
     &-list {
       display: flex;
       flex-direction: column;
-      gap: 0.5rem;
+      gap: 0.7rem;
     }
 
     &-link {
@@ -634,6 +613,7 @@ img {
   font-size: 1.5rem;
   color: $white-color;
   transition: $transition-400;
+  z-index: $z-fixed;
   opacity: 0;
 
   &:hover {
